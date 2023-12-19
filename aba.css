@@ -1,0 +1,36 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+  
+  
+h1{
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  
+}
+.videos{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5rem;;
+}
+
+#bg{
+  width: 100rem;
+}
+.outros{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.pv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5rem;
+  }
+  h2{
+    align-items:right;
+    margin-left: 1500px;
+    font-family: 'Times New Roman', Times, serif;
+  }
