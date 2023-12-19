@@ -1,0 +1,288 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;900&display=swap');
+  
+
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+font-family: 'Kanit', sans-serif;
+
+}
+
+html{
+height: 500vh;
+
+}
+
+.container{
+max-width: 1280px;
+margin: auto;
+
+}
+.flex{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+header.rolagem{
+background-color: greenyellow;
+padding: 20px 4%;
+}
+
+header{
+width: 100%;
+padding: 2px 4%;
+position: fixed;
+top:0;
+left: 0;
+transition: 1s;
+}
+
+header.rolagem a{
+    color: black;
+}
+
+
+
+
+
+
+header i{
+font-size: 2em;
+color: #050505;
+
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.banner h1{
+   text-align: center;
+    font-size: 12em;
+    color: black;
+    margin-bottom: 25px;
+}
+.mundo{
+margin-left: 160px;
+
+}
+.btn-contatoo button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: rgb(45, 185, 45);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+.imagens{
+    display: flex;
+    flex-direction: row;
+    margin-top: -70px;
+    justify-content: space-around;
+}
+.searchBox {
+    display: flex;
+    max-width: 230px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #2f3640;
+    border-radius: 50px;
+    position: relative;
+  }
+  
+.input-header{
+    border: 2px solid #000;
+   
+    
+}
+  
+.det{
+    text-align: right;
+    font-size: 25px; 
+   font-family: Arial, Helvetica, sans-serif;
+}
+.vindo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15em;
+    color: rgb(255, 0, 179);
+    margin-bottom: 25px;
+    margin: 5rem 0rem;
+    margin-left: 340px;
+    animation: piscaPisca 5s infinite;
+    
+}
+@keyframes piscaPisca{
+0%{color: rgb(255, 0, 191);}
+10%{color: rgb(255, 0, 191);}
+15%{color: #000;}
+20%{color: rgb(0, 0, 0);}
+25%{color: blue;}
+35%{color:blue;}
+40%{color: rgb(0, 0, 0);}
+45%{color: rgb(0, 0, 0);}
+50%{color: #ff0000;}
+60%{color: red;}
+65%{color:black;}
+70%{color: #000;}
+75%{color: greenyellow;}
+85%{color: greenyellow;}
+90%{color: #000;}
+95%{color: #000;}
+100%{color: rgb(255, 0, 191);}
+}
+button.an{
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: 870px;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #FF0072;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #FF0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    
+  }
+  
+  button:before .an{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FF0072;
+    z-index: -1;
+  }
+  
+  button:hover, button:focus .an {
+    color: white;
+  }
+  
+  button:hover:before, button:focus:before .an{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  button:active .an{
+    transform: scale(0.9);
+  }
+.heart-container {
+    --heart-color: rgb(255, 91, 137);
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transition: .3s;
+    margin: -3em;
+    margin-left: 150px;
+  }
+  
+  .heart-container .checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  .heart-container .svg-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heart-container .svg-outline,
+          .heart-container .svg-filled {
+    fill: var(--heart-color);
+    position: absolute;
+  }
+  
+  .heart-container .svg-filled {
+    animation: keyframes-svg-filled 1s;
+    display: none;
+  }
+  
+  .heart-container .svg-celebrate {
+    position: absolute;
+    animation: keyframes-svg-celebrate .5s;
+    animation-fill-mode: forwards;
+    display: none;
+    stroke: var(--heart-color);
+    fill: var(--heart-color);
+    stroke-width: 2px;
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-filled {
+    display: block
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-celebrate {
+    display: block
+  }
+  
+  @keyframes keyframes-svg-filled {
+    0% {
+      transform: scale(0);
+    }
+  
+    25% {
+      transform: scale(1.2);
+    }
+  
+    50% {
+      transform: scale(1);
+      filter: brightness(1.5);
+    }
+  }
+  
+  @keyframes keyframes-svg-celebrate {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      filter: brightness(1.5);
+    }
+  
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+      display: none;
+    }
+  }
+  .av{
+font-size: 2em;
+    margin: -1em;
+    margin-left: -60px;
+  }
+
